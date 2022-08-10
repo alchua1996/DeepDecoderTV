@@ -48,8 +48,8 @@ for epoch in range(epochs):
     loss = F.mse_loss(output, img_tensor) + total_variation_loss(output, weight = 1)
 
     if (epoch % 25 == 0):
-      print('Epoch: {}', epoch)
-      print('Loss: {}\n', loss.item())
+      print('Epoch: {}'.format(epoch))
+      print('Loss: {}\n'.format(loss.item()))
     loss.backward()
     optimizer.step()
     #Regularization
