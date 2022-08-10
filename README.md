@@ -2,7 +2,7 @@
 This is an unoffical implementation of [Deep Decoder: Concise Image Representations from Untrained Non-convolutional Networks](https://arxiv.org/abs/1810.03982) for denoising image. To improve the model, we attempted to add an inductive bias (since TV is a well studied phenomenon in mathematics for image denoising) by using learned total variation (TV) layers taken from [Total Variation Optimization Layers for Computer Vision](https://arxiv.org/abs/2204.03643). 
 
 # Install/Usage Instructions
-To use this code, follow the instructions to install the total variation activation functions from [the git of the authors](https://github.com/raymondyeh07/tv_layers_for_cv). The **folder of code tv_opt_layer" is needed from the authors' github to run this code properly. It is not included here. ** 
+To use this code, follow the instructions to install the total variation activation functions from [the git of the authors](https://github.com/raymondyeh07/tv_layers_for_cv). The **folder of code tv_opt_layers is needed from the authors' github to run this code properly. It is not included here. ** 
 
 The command for running the code is
 
