@@ -55,7 +55,7 @@ class DeepDecoder(nn.Module):
             if(activations[i] == 'relu'):
                 self.model.add_module('conv_block_{}'.format(i+1),
                            ConvBlock(channels[i],channels[i+1], nn.ReLU()))
-            elif(acitvations[i] == 'leaky_relu'):
+            elif(activations[i] == 'leaky_relu'):
                 self.model.add_module('conv_block_{}'.format(i+1),
                            ConvBlock(channels[i],channels[i+1], nn.LeakyReLU()))
             elif(activations[i] == 'tv_smooth'):
