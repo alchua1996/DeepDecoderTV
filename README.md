@@ -13,6 +13,11 @@ python denoise.py -i "image.png" -o "result.png" -c "64,64,64,64,64,64" -a "relu
 Switch "image.png" to y desired image to denoise. The output will be "result.png." The commands -c are for the number of channels in each layer and -a is for the activation functions. For this code to run properly, the the number of comma separated elements in -the must be 1 more than the number in -a. See decoder.py for more details of how the network works and the possible activation function choices. Lastly, -e stands for the number of epochs. From previous experience, 1500 seems to be the best.
 
 # Example Runs and Discussion of Results
+Below is the results of the original deep decoder on the image of a butterfly:
+![vanilla_deep_decoder](https://user-images.githubusercontent.com/70219522/183818757-fbd3b47c-791d-4b61-8775-5547e2b1cac0.png)
+Here is a run with some TV layers added:
+![deep_decoder_tv](https://user-images.githubusercontent.com/70219522/183818659-052f2fda-ba15-4125-a272-9c4f7441382f.png)
+Although the PSNR is slightly lower, the image quality is much higher because there are less artifiacts in the butterfly wings. 
 
 # Citations and Aknowledgements
 Heckel, R., and P. Hand. "Deep Decoder: Concise Image Representations from Untrained Non-convolutional Networks." ICLR 2019. 2018.
