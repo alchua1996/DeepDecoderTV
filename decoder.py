@@ -61,7 +61,7 @@ class DeepDecoder(nn.Module):
             elif(activations[i] == 'tv_smooth'):
                 self.model.add_module('conv_block_{}'.format(i+1),
                           ConvBlock(channels[i],channels[i+1], GeneralTV2DLayer(lmbd_init=1)))
-            elif(activations[i] == 'tv_smooth'):
+            elif(activations[i] == 'tv_sharp'):
                 self.model.add_module('conv_block_{}'.format(i+1), 
                            ConvBlock(channels[i],channels[i+1], GeneralTV2DLayer(lmbd_init=1, mode = 'sharp')))
             else:
