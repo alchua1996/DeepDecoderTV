@@ -20,6 +20,6 @@ Here is a run with some TV layers added:
 Although the PSNR is slightly lower, the image quality is much higher because there are less artifiacts in the butterfly wings. 
 
 # Citations and Aknowledgements
-Heckel, R., and P. Hand. "Deep Decoder: Concise Image Representations from Untrained Non-convolutional Networks." ICLR 2019. 2018.
+Heckel, R., and P. Hand. "Deep Decoder: Concise Image Representations from Untrained Non-convolutional Networks." ICLR 2019.
 
 Yeh, Raymond A., et al. "Total Variation Optimization Layers for Computer Vision." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2022.
